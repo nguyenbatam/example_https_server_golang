@@ -26,14 +26,14 @@ init https server :
     worker 1 started  upload
     worker 1 finished job
  
- client request :
+ client request 1 :
   
 		curl -k -X POST  "https://127.0.0.1:8443/upload/dropbox" -F "image=@WorldCup.jpg" -H "Authorization : zWnEITOt3sAAAAAAAAAAEYDxegNY7vq2usYt4dJcd-UZ6JTfPCNEh1QMeUYaeMnm"
   ==> response 
   
 		{"data":"https://dl.dropboxusercontent.com/apitl/1/AADLZgLUBzCKoSE5XD6Pm1Qy2Yw4GdNICaeIeXZDwknXzexVw4fu2Zdf-yORKU36S9qGP54hL3_I4kugspGP-yVk2bIe7J7MclbqfWUa5MZPZ8G7J1z7oQvDsTHcsK50KZ4xGYgBnOJPacfv7oZPjCwrkq9vTR4QOuRiuh0uq8YkkdVnda8FDCKvNI8dCtl6zSfVDFP7G8yIChPn7SEiZXyQWpEvS2GwLUUPgtDWtmrzSCX0pkj5cSw4M8amP58Lc9hIBfRihEv8Os150ZpV4g3s","error":"","status":"success"}
   
-cmd2
+client request 2
   
 		curl -k -X POST  "https://127.0.0.1:8443/upload/dropbox" -F "image=@WorldCup.jpg" -H "Authorization : zWnEITOt3sAAAAAAAAAAEYDxegNY7vq2usYt4dJcd-UZ6JTfPCNEh1QMeUYaeMnmx"
 =>> response
