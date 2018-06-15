@@ -1,0 +1,14 @@
+syntax = "proto3";
+message UploadInfo{
+	string token    = 1;
+	string fullPath = 2;
+	bytes data	= 3;
+}
+message ResponseResult{
+	string message 	=1;
+}
+service DropboxService {
+	rpc Upload(UploadInfo) returns (ResponseResult) {}
+	rpc Ping(UploadInfo) returns (ResponseResult){}
+}
+
