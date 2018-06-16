@@ -20,7 +20,7 @@ init https server :
 	
   init https server (have some workers pool send request to grpc server - it keep alive connection with grpc server ):
   
-    go run util.go pool_worker.go dropbox.go grpc.go server.go server_step_1.go server_step_2.go --step 3
+    go run util.go pool_worker.go dropbox.go grpc.go server.go server_step_1.go server_step_2.go --step 2
     worker 5 started  upload
     worker 5 finished job
     worker 1 started  upload
